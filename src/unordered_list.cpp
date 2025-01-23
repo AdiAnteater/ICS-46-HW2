@@ -148,16 +148,16 @@ void UnorderedLinkedList::insert(const string & word)
     head = new ListNode(word, head);
 }
 
-void UnorderedLinkedList::find(const string & word)
+bool UnorderedLinkedList::find(const string & word)
 {
     ListNode * result = ListNode::find(word, head);
     if (result == nullptr) 
     {
-        cout << word << " not found." << endl;
+        return 0;
     } 
     else 
     {
-        cout << word << " found." << endl;
+        return 1;
     }
 }
 
