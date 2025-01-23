@@ -128,7 +128,7 @@ void ListNode::remove(const string & word, ListNode * & L)
             }
             else
             {
-                prev->next = curr->next
+                prev->next = curr->next;
             }
             prev = curr
             curr = curr->next;
