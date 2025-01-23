@@ -114,15 +114,15 @@ void ListNode::delete_list(ListNode * L)
     }
 }
 
-void ListNode::remove(const string & word, ListNode * & L)
+void ListNode::remove(const string & word, ListNode *& L)
 {
-    ListNode * curr = L;
-    ListNode * prev = nullptr;
-    while (curr != nullptr) 
+    ListNode *curr = L;
+    ListNode *prev = nullptr;
+    while (curr != nullptr)
     {
-        if (curr->data == word) 
+        if (curr->data == word)
         {
-            if(prev == nullptr)
+            if (prev == nullptr)
             {
                 L = curr->next;
             }
@@ -130,11 +130,11 @@ void ListNode::remove(const string & word, ListNode * & L)
             {
                 prev->next = curr->next;
             }
-            prev = curr;
-            curr = curr->next;
             delete curr;
             return;
         }
+        prev = curr;
+        curr = curr->next;
     }
 }
 
