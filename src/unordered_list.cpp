@@ -250,8 +250,8 @@ void measure_UnorderedList_methods(string file_name, UnorderedList & L)
     {
         cout << "\tK = " << K << endl;
         insert_all_words(K, file_name, L);
-        find_all_words(K, file_name, L)
-        remove_all_words(K, file_name, L)
+        find_all_words(K, file_name, L);
+        remove_all_words(K, file_name, L);
         if(!L.is_empty())
         {
             error(L.name, "is not empty");
