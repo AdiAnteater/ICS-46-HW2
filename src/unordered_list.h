@@ -54,7 +54,7 @@ class UnorderedLinkedList
 public:
     UnorderedLinkedList();
     void insert(const string & word);
-    void find(const string & word);
+    bool find(const string & word);
     void remove(const string &  word);
     bool is_empty();
     bool is_full();

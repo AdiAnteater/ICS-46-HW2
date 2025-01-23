@@ -32,16 +32,16 @@ void UnorderedArrayList::insert(const string & word)
     buf[size++] = word;
 }
 
-void UnorderedArrayList::find(const string & word)
+bool UnorderedArrayList::find(const string & word)
 {
     int index = find_index(word);
     if (index == -1) 
     {
-        cout << word << " not found." << endl;
+        return 0;
     } 
     else 
     {
-        cout << word << " found at index " << index << "." << endl;
+        return 1;
     }
 }
 
